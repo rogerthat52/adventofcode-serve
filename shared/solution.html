@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Advent of Code Challenge</title>
+  <meta name="description" content="Advent of Code">
+  <meta name="author" content="Roger Huntley">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="flex">
+    <iframe src="input.txt" height="800"></iframe>
+    <div id="input">
+      <div class="flex flex-column">
+      <div>
+        <input type="button" name="button1" value= "Submit Solution 1" onclick='document.getElementsByName("output1")[0].value = solution1()' />
+        <input type="button" name="button2" value= "Submit Solution 2" onclick='document.getElementsByName("output2")[0].value = solution2()' />
+      </div>
+      <div>
+        <label for="output1">Output 1</label>
+        <input type="text" name="output1" />
+        <label for="output2">Output 2</label>
+        <input type="text" name="output2" />
+      </div>
+      
+      <script src="adventlib.js"></script>
+      <script src="solution.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+      </div>
+    </div>
+    <iframe src="printsolution.js" height="800"></iframe>
+  </div>
+</body>
+</html>
